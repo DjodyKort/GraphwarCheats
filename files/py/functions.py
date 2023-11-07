@@ -150,6 +150,9 @@ class Functions:
         # Internal
         from files.py.classes import ConfigData
 
+        # Packages
+        import pyperclip
+
         # ======== Declaring Variables ========
         # Window points
         Functions.getWindowPoints()
@@ -164,3 +167,6 @@ class Functions:
 
         # Printing the result
         print(result)
+
+        # Putting it to clipboard
+        pyperclip.copy(result)
